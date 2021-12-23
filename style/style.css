@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: open sans;
+}
+
+.header_1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "header_contacts header_button";
+}
+
+.header_2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: "header_logo search icon";
+}
