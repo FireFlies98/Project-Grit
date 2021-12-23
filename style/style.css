@@ -15,3 +15,4 @@ body {
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: "header_logo search icon";
 }
+
