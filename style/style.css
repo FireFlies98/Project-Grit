@@ -4,15 +4,84 @@ body {
     font-family: open sans;
 }
 
-.header_1 {
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 16px 45px 64px 45px;
+}
+
+.header {
+    min-height: 178px;
+}
+
+.header-information {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-template-areas: "header_contacts header_button";
+    /* grid-template-rows: 3fr 2fr; */
+    grid-template-rows: 48px;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+
+.information-contacts__telephone {
+    margin-left: 33px;
+    margin-right: 33px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #151515;
+}
+
+.information-contacts__email {
+    font-size: 12px;
+    font-weight: 400;
+    color: #151515;
+}
+
+.information-contacts__button {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6A983C;
+}
+
+.information-button__butt {
+    margin-left: 38px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6A983C;
 }
 
 .header_2 {
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 2fr 5fr 2fr;
     grid-template-areas: "header_logo search icon";
+    /* grid-template-rows: 3fr 12fr; */
+    grid-template-rows: 130px;
+    align-items: center;
+    grid-column-gap: 10px;
 }
 
+.header-information__button {
+    justify-self: end;
+}
+
+.search {
+    width: 500px;
+    justify-self: center;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #D1D1D1;
+    background-image: url(../image/ic-actions-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 468px;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: 76px 38px;
+    justify-self: end;
+    /* gap: 38px; */
+}
