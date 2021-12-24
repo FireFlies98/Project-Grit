@@ -8,6 +8,12 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #151515;
+}
+
 .wrapper {
     margin: 16px 45px 64px 45px;
 }
@@ -126,4 +132,43 @@ a {
     font-size: 15px;
     font-weight: 500;
     color: #151515;
+}
+
+.header__sails {
+    height: 460px;
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: 268px 1fr 1fr 1fr;
+    gap: 42px;
+}
+
+.sails__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sails__menu--item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A983C;
+    text-decoration: underline;
+    margin: 12px 0px 12px;
+}
+
+.item_1 {
+    margin-top: 43px;
+}
+
+.sails__menu--butt {
+    width: 167px;
+    height: 48px;
+    border-radius: 12px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #151515;
+    margin-top: 48px;
 }
