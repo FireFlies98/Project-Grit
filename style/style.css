@@ -24,11 +24,12 @@ a {
     grid-template-rows: 48px;
     align-items: center;
     grid-column-gap: 10px;
+    border-bottom: 1px solid #ebebebe7;
 }
 
 .information-contacts__telephone {
-    margin-left: 33px;
-    margin-right: 33px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 12px;
     font-weight: 400;
     color: #151515;
@@ -47,13 +48,13 @@ a {
 }
 
 .information-button__butt {
-    margin-left: 38px;
+    margin-left: 45px;
     font-size: 12px;
     font-weight: 400;
     color: #6A983C;
 }
 
-.header_2 {
+.header-search {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-areas: "header_logo search icon";
@@ -67,9 +68,14 @@ a {
     justify-self: end;
 }
 
-.search {
-    width: 500px;
+.header-search__search {
     justify-self: center;
+}
+
+.input-field {
+    width: 500px;
+    /* justify-self: center; */
+    text-align: center;
     height: 42px;
     border-radius: 12px;
     border: 1px solid #D1D1D1;
@@ -77,11 +83,47 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-position-x: 468px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #F9F9F9;
 }
 
-.icon {
+.absolut {
+    position: absolute;
+    margin: 15px 16px 9px 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.vector {
+    margin-left: 12px;
+    margin-right: 28px;
+}
+
+.header-search__icon {
     display: grid;
     grid-template-columns: 76px 38px;
     justify-self: end;
     /* gap: 38px; */
+}
+
+/* .main-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+} */
+
+.navigation {
+    display: grid;
+    grid-template-columns: .8fr 1.7fr 1.4fr 1fr 1fr 1.5fr 1fr 2.3fr;
+    grid-column-gap: 42px;
+    background: #F9F9F9;
+    height: 55px;
+    align-items: center;
+    color: #151515;
+} 
+
+.navigation__item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #151515;
 }

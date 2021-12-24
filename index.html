@@ -27,7 +27,17 @@
                 <a href="#">
                     <img src="image/Freshnesecom.png" alt="logo">
                 </a>
-                <input type="email" class="header-search__search" placeholder="Search Products, categories ...">
+                <div class="header-search__search">
+                    <label for="search_products" class="absolut">All categories<img src="image/Vector.png" alt="vector" class="vector"></label>
+                    <input list="categories" id="search_products" name="search_products" class="input-field" placeholder="Search Products, categories ...">
+                    <datalist id="categories">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+                </div>
                 <div class="header-search__icon">
                     <a href="#">
                         <img src="image/ic-ecommerce-basket.png" alt="icon_user">
@@ -38,6 +48,20 @@
                 </div>
             </div>
         </header>
+        <main>
+            <nav class="main__menu">
+                <ul class="navigation">
+                    <li><a href="#" class="navigation__item">Bacery</a></li>
+                    <li><a href="#" class="navigation__item">Fruit and vegetables</a></li>
+                    <li><a href="#" class="navigation__item">Meat and fish</a></li>
+                    <li><a href="#" class="navigation__item">Drinks</a></li>
+                    <li><a href="#" class="navigation__item">Kitchen</a></li>
+                    <li><a href="#" class="navigation__item">Special nutrition</a></li>
+                    <li><a href="#" class="navigation__item">Baby</a></li>
+                    <li><a href="#" class="navigation__item">Pharmacy</a></li>
+                </ul>
+            </nav>
+        </main>
     </div>
 </body>
 </html>
