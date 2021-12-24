@@ -14,6 +14,24 @@ h3 {
     color: #151515;
 }
 
+p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #575757;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #151515;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #151515;
+}
+
 .wrapper {
     margin: 16px 45px 64px 45px;
 }
@@ -134,17 +152,19 @@ h3 {
     color: #151515;
 }
 
-.header__sails {
+.main__sails {
     height: 460px;
-    margin-top: 68px;
     display: grid;
-    grid-template-columns: 268px 1fr 1fr 1fr;
+    grid-template-columns: 268px 1fr;
     gap: 42px;
+    align-items: center;
+
 }
 
 .sails__menu {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .sails__menu--item {
@@ -152,11 +172,11 @@ h3 {
     font-weight: 400;
     color: #6A983C;
     text-decoration: underline;
-    margin: 12px 0px 12px;
+    margin-bottom: 12px;
 }
 
 .item_1 {
-    margin-top: 43px;
+    margin-top: 26px;
 }
 
 .sails__menu--butt {
@@ -171,4 +191,65 @@ h3 {
     font-weight: 700;
     color: #151515;
     margin-top: 48px;
+}
+
+.sails__menu--products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 42px;
+    max-height: 332px;
+}
+
+.products--card {
+    width: 269px;
+    height: 323px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.products--card__image {
+    margin: 16px;
+}
+
+.cards__text {
+    margin-left: 16px;
+    margin-bottom: 11px;
+    line-height: 23px;
+}
+
+.products_cost {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Buy {
+    width: 90px;
+    height: 36px;
+    background: #6A983C;
+    border-radius: 12px;
+    border: 2px solid #46760A;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.discount {
+    position: absolute;
+    top: 29px;
+    left: 33px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6A983C;
 }
