@@ -94,34 +94,40 @@ h6 {
 
 .header-search__search {
     justify-self: center;
-}
-
-.input-field {
-    width: 500px;
-    /* justify-self: center; */
-    text-align: center;
+    display: flex;
     height: 42px;
-    border-radius: 12px;
+    margin: 30px;
     border: 1px solid #D1D1D1;
-    background-image: url(../image/ic-actions-search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 468px;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: #F9F9F9;
+    width: 500px;
+    border-radius: 12px;
+    background: #F9F9F9;
 }
 
-.absolut {
-    position: absolute;
-    margin: 15px 16px 9px 15px;
+.search_categories {
+    margin-left: 4px;
+    min-height: 37px;
+    width: 166px;
+    padding: 10px;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;   
+    outline: none; 
+    background: #F9F9F9;
     font-size: 15px;
     font-weight: 700;
 }
 
-.vector {
-    margin-left: 12px;
-    margin-right: 28px;
+.search_products {
+    width: 324px;
+    border: none;
+    outline: none;
+    background: #F9F9F9;
+    background-image: url(../image/ic-actions-search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 296px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .header-search__icon {

@@ -28,15 +28,15 @@
                     <img src="image/Freshnesecom.png" alt="logo">
                 </a>
                 <div class="header-search__search">
-                    <label for="search_products" class="absolut">All categories<img src="image/Vector.png" alt="vector" class="vector"></label>
-                    <input list="categories" id="search_products" name="search_products" class="input-field" placeholder="Search Products, categories ...">
-                    <datalist id="categories">
-                        <option value="Chocolate">
-                        <option value="Coconut">
-                        <option value="Mint">
-                        <option value="Strawberry">
-                        <option value="Vanilla">
-                    </datalist>
+                    <select name="text" id="input_search" class="search_categories">
+                        <option value="All-categories" selected disabled>All categories</option>
+                        <option value="Bacery">Bacery</option>
+                        <option value="Fruit">Fruit</option>
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Drinks">Drinks</option>
+                    </select>
+                    <input type="text" name="search" class="search_products" placeholder="Search Products, categories ...">
                 </div>
                 <div class="header-search__icon">
                     <a href="#">
