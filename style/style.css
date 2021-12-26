@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: open sans;
-}
-
-a {
-    text-decoration: none;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #151515;
-}
-
-p {
+:root {
+    --a-text-decoration: none;
+    --a-text-color: #151515;
+    --a-text-color-green: #6A983C;
+    --h3-font-size: 18px;
     font-size: 12px;
     font-weight: 400;
     color: #575757;
+}
+
+body {
+    font-family: open sans;
+    font-size: 12px;
+    font-weight: 400;
+    color: #575757;
+}
+
+a {
+    text-decoration: var(--a-text-decoration);
+    color: var(--a-text-color);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+    color: #151515;
 }
 
 h5 {
@@ -68,10 +76,10 @@ h6 {
 .information-contacts__button {
     font-size: 12px;
     font-weight: 400;
-    color: #6A983C;
+    color: var(--a-text-color-green);
 }
 
-.information-button__butt {
+.information-button__button {
     margin-left: 45px;
     font-size: 12px;
     font-weight: 400;
@@ -88,7 +96,7 @@ h6 {
     grid-column-gap: 10px;
 }
 
-.header-information__button {
+.header-information__buttons {
     justify-self: end;
 }
 
@@ -117,7 +125,7 @@ h6 {
     font-weight: 700;
 }
 
-.search_products {
+.header-search__icons {
     width: 324px;
     border: none;
     outline: none;
@@ -134,13 +142,22 @@ h6 {
     display: grid;
     grid-template-columns: 76px 38px;
     justify-self: end;
-    /* gap: 38px; */
 }
 
-/* .main-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-} */
+.search-icon__layer {
+    position: relative;
+    top: 14px;
+}
+
+.search-icon__icon {
+    position: relative;
+    top: 14px;
+}
+
+.search-icon__icon-4 {
+    position: relative;
+    right: 9px;
+}
 
 .navigation {
     display: grid;
@@ -176,7 +193,7 @@ h6 {
 .sails__menu--item {
     font-size: 14px;
     font-weight: 400;
-    color: #6A983C;
+    color: var(--a-text-color-green);
     text-decoration: underline;
     margin-bottom: 12px;
 }
@@ -185,7 +202,7 @@ h6 {
     margin-top: 26px;
 }
 
-.sails__menu--butt {
+.sails__menu--btn {
     width: 167px;
     height: 48px;
     border-radius: 12px;
@@ -199,7 +216,7 @@ h6 {
     margin-top: 48px;
 }
 
-.sails__menu--products {
+.sails-menu__products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 42px;
@@ -231,10 +248,10 @@ h6 {
     align-items: center;
 }
 
-.Buy {
+.products__buy {
     width: 90px;
     height: 36px;
-    background: #6A983C;
+    background: var(--a-text-color-green);
     border-radius: 12px;
     border: 2px solid #46760A;
     color: #FFFFFF;
@@ -257,5 +274,71 @@ h6 {
     width: 100%;
     font-size: 12px;
     font-weight: 600;
-    color: #6A983C;
+    color: var(--a-text-color-green);
+}
+
+.main__category-menu {
+    display: grid;
+    grid-template-columns: 269px 1fr;
+    height: 410px;
+    gap: 42px;
+    align-items: center;
+}
+
+.sails__menu--conteiner {
+    margin-bottom: 0;
+}
+
+.menu-recepies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+    max-height: 285px;
+    overflow: auto;
+}
+
+.menu-recepies__title {
+    width: 420px;
+    height: 280px;
+}
+
+.menu-recepies__image {
+    background: #F4F8EC;
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.menu-recepies__text {
+    position: relative;
+    bottom: 232px;
+    left: 33px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--a-text-color-green);
+}
+
+.menu-recepies__logo {
+    position: relative;
+    left: 33px;
+    bottom: 215px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--a-text-color);
+}
+
+.menu-recepies__button {
+    position: relative;
+    left: 33px;
+    bottom: 119px;
+    width: 163px;
+    height: 47px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--a-text-color);
+    border: 2px solid #92C064;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
