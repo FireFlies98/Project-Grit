@@ -1,47 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
+    --body-font-size: 12px;
+    --body-font-weight: 400;
+    --body-colot: #575757;
     --a-text-decoration: none;
     --a-text-color: #151515;
     --a-text-color-green: #6A983C;
     --h3-font-size: 18px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #575757;
+    --h3-text-color: #151515;
+    --h3-fobt-wight: 600;
+    --h5-font-size: 15px;
+    --h5-font-weight: 500;
+    --h5-color: #151515;
+    --h6-font-size: 18px;
+    --h6-font-weight: 600;
+    --h6-color: #151515;
 }
 
 body {
     font-family: open sans;
-    font-size: 12px;
-    font-weight: 400;
-    color: #575757;
+    font-size: var(--body-font-size, 12px);
+    font-weight: var(--body-font-weight, 400);
+    color: var(--body-colot, #575757);
 }
 
 a {
-    text-decoration: var(--a-text-decoration);
-    color: var(--a-text-color);
+    text-decoration: var(--a-text-decoration, none);
+    color: var(--a-text-color, #151515);
 }
 
 h3 {
-    font-size: var(--h3-font-size);
-    font-weight: 600;
-    color: #151515;
+    font-size: var(--h3-font-size, 18px);
+    font-weight: var(--h3-fobt-wight, 600);
+    color: var(--h3-text-color, #151515);
 }
 
 h5 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #151515;
+    font-size: var(--h5-font-size, 15px);
+    font-weight: var(--h5-font-weight, 500);
+    color: var(--h5-color, #151515);
 }
 
 h6 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #151515;
+    font-size: var(--h6-font-size, 18px);
+    font-weight: var(--h6-font-weight, 600);
+    color: var(--h6-color, #151515);
 }
 
 .wrapper {
-    margin: 16px 45px 64px 45px;
+    margin: 0px 45px 0px 45px;
 }
 
 .header {
@@ -162,17 +170,19 @@ h6 {
 .navigation {
     display: grid;
     grid-template-columns: .8fr 1.7fr 1.4fr 1fr 1fr 1.5fr 1fr 2.3fr;
-    grid-column-gap: 42px;
+    /* grid-column-gap: 42px; */
     background: #F9F9F9;
-    height: 55px;
+    /* height: 55px; */
     align-items: center;
     color: #151515;
+    padding: 16px 30px 16px 45px;
 } 
 
 .navigation__item {
     font-size: 15px;
     font-weight: 500;
     color: #151515;
+    display: flex;
 }
 
 .main__sails {
@@ -341,4 +351,80 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main__scrol {
+    height: 425px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.main_scrol--header {
+    display: flex;
+    justify-content: space-between;
+    margin: 69px 45px 42px 45px;
+}
+
+.scrol--button {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.scrollable {
+    height: 222px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 62px;
+    overflow: auto;
+}
+
+.scrollable--box {
+    width: 369px;
+    height: 198px;
+    border: 1px solid #F1F1F1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scrollable--box__text {
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--a-text-color);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.box-text__name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+
+.box-icon {
+    position: relative;
+    top: 26px;
+}
+
+.section_headline {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+}
+
+.section_headline--header {
+    display: flex;
+    justify-content: space-between;
+    margin: 69px 0px 42px 0px;
+}
+
+.section_headline--cards {
+    height: 332px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-self: center;
+    gap: 82px;
 }
