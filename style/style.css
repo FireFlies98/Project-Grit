@@ -148,7 +148,7 @@ h6 {
 .search_categories {
     margin-left: 4px;
     min-height: 37px;
-    width: 166px;
+    width: 163px;
     padding: 10px;
     border: none;
     -moz-appearance: none;
@@ -160,14 +160,14 @@ h6 {
 }
 
 .header-search__icons {
-    width: 324px;
+    width: 314px;
     border: none;
     outline: none;
     background: #F9F9F9;
     background-image: url(../image/ic-actions-search.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: 296px;
+    background-position-x: 290px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -799,4 +799,18 @@ h6 {
 
 .footer-end {
     margin-top: 48px;
+}
+
+.angel_icon_down {
+    margin-left: 6px;
+}
+
+.angel_icon_right {
+    margin-left: 13px;
+}
+
+.icon_search {
+    width: 8px;
+    position: relative;
+    right: 45px;
 }
